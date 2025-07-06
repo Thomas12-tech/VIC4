@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vehicle Checklist</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Vehicle Pre-Inspection Checklist</h1>
+    <form id="checklistForm">
+      <div class="section">
+        <h2>Documents</h2>
+        <div class="item-group">
+          <div class="check-item" data-name="Driving License">
+            <label>Driving License</label>
+            <input type="checkbox"/>
+            <input type="file" accept="image/*" capture="environment"/>
+          </div>
+          <div class="check-item" data-name="DDT">
+            <label>DDT</label>
+            <input type="checkbox"/>
+            <input type="file" accept="image/*" capture="environment"/>
+          </div>
+          <div class="check-item" data-name="SAR">
+            <label>SAR</label>
+            <input type="checkbox"/>
+            <input type="file" accept="image/*" capture="environment"/>
+          </div>
+          <div class="check-item" data-name="Medical">
+            <label>Medical</label>
+            <input type="checkbox"/>
+            <input type="file" accept="image/*" capture="environment"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Oil Level</h2>
+        <div class="item-group">
+          <div class="check-item"><label>Hydraulic</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Engine</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Transmission</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Lights</h2>
+        <div class="item-group">
+          <div class="check-item"><label>Brake</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Park</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Head</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Indicator</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Hazards</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Other Checks</h2>
+        <div class="item-group grid-2">
+          <div class="check-item"><label>Screen</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Wipers</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Battery Terminals</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Battery Water</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Steering</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Tires</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Nuts/Studs</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Pressure</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Spare</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Loadbin</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Hooter</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Radiator</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Oil Leaks</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Air Leaks</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Drains</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Differentials</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Mirrors</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Temperatures</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Safety Equipment</h2>
+        <div class="item-group">
+          <div class="check-item"><label>Fire Extinguisher</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>First Aid Kit</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+          <div class="check-item"><label>Emergency Triangle</label><input type="checkbox"/><input type="file" accept="image/*" capture="environment"/></div>
+        </div>
+      </div>
+
+      <button type="submit">Submit Checklist</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
